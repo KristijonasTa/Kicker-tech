@@ -1,0 +1,109 @@
+.card {
+	margin-top: 92px;
+	width: 500px;
+	top: 105px;
+	left: 105px;
+	background-color: #585858;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	border-radius: 15px;
+}
+p {
+	margin: 0;
+}
+
+.picture {
+	margin-top: 33px;
+	align-items: center;
+	flex-direction: column;
+	min-width: 430px;
+	min-height: 400px;
+	background-color: #323232;
+	border-radius: 15px;
+}
+
+.bottom-card {
+	padding-top: 5px;
+	padding-left: 15px;
+	background-color: #353535;
+}
+
+.search-tab {
+	margin: auto;
+	position: sticky;
+	top: 0;
+	display: flex;
+	align-items: center;
+}
+
+input {
+	margin: 0;
+	padding: 0;
+	background-color: #444;
+	border-radius: 15px 0 0 15px;
+	border: none;
+	width: 80%;
+	height: 40px;
+}
+
+::placeholder {
+	color: #ffffff;
+	padding-left: 20px;
+}
+
+button {
+	margin: 0;
+	padding: 0;
+	background-color: #444;
+	color: #ffffff;
+	width: 15%;
+	height: 40px;
+	border-radius: 0 15px 15px 0;
+	cursor: pointer;
+	text-decoration: none;
+	border: none;
+}
+
+.scroll-div {
+	padding: 10px;
+}
+
+.scroll-bar {
+	max-height: 200px;
+	overflow: scroll;
+	scroll-behavior: smooth;
+	border-radius: 10px;
+}
+
+.profile {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.picture-comment {
+	background-color: #444;
+	height: 45px;
+	width: 45px;
+	border-radius: 50%;
+}
+
+.post {
+	padding-left: 55px;
+	border-bottom: 1px solid #dadada;
+}
+
+@media screen and (max-width: 1201px) {
+	.top-card {
+		display: flex;
+		flex-direction: column-reverse;
+	}
+}
+
+@media screen and (max-width: 640px) {
+	.top-card {
+		display: flex;
+		flex-direction: column;
+	}
+}

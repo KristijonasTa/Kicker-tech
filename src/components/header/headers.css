@@ -1,0 +1,15 @@
+header {
+	margin: auto;
+	width: 100%;
+	background-color: #2d2d2d;
+	padding: 4px;
+}
+
+.list {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 3rem;
+	list-style-type: none;
+	padding: 0px;
+}

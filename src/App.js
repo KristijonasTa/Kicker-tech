@@ -1,14 +1,18 @@
-import React, { PureComponent } from 'react';
-import Header from './components/header/Header';
+import React from 'react';
+import Card from './components/card/Card';
+import Header from './components/header/Headers';
 
-export class App extends PureComponent {
-	render() {
-		return (
-			<div>
-				<Header />
+const App = () => {
+	return (
+		<div>
+			<Header />
+			<div className='wrapper'>
+				<Card />
+				<Card />
+				<Card />
 			</div>
-		);
-	}
-}
+		</div>
+	);
+};
 
 export default App;
