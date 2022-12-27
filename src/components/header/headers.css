@@ -13,3 +13,13 @@ header {
 	list-style-type: none;
 	padding: 0px;
 }
+
+#mobile i {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.navBar {
+	width: 10px;
+	height: 10px;
+}
