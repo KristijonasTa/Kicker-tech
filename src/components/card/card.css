@@ -1,8 +1,6 @@
 .card {
 	margin-top: 92px;
-	width: 500px;
-	top: 105px;
-	left: 105px;
+	min-width: 500px;
 	background-color: #585858;
 	display: flex;
 	align-items: center;
@@ -71,8 +69,9 @@ button {
 
 .scroll-bar {
 	max-height: 200px;
-	overflow: scroll;
+	overflow-y: scroll;
 	scroll-behavior: smooth;
+	scrollbar-width: 5px;
 	border-radius: 10px;
 }
 
@@ -95,15 +94,45 @@ button {
 }
 
 @media screen and (max-width: 1201px) {
+	.card {
+		display: flex;
+		flex-direction: row;
+	}
 	.top-card {
 		display: flex;
 		flex-direction: column-reverse;
+		margin: 35px;
+	}
+	.bottom-card {
+		min-height: 610px;
+		border-radius: 0 15px 15px 0;
+	}
+	.scroll-bar {
+		min-height: 600px;
 	}
 }
 
 @media screen and (max-width: 640px) {
+	.card {
+		display: flex;
+		flex-direction: column;
+	}
+
 	.top-card {
 		display: flex;
 		flex-direction: column;
+	}
+
+	.bottom-card {
+		min-height: 200px;
+		padding-top: 5px;
+		padding-left: 15px;
+		background-color: #353535;
+	}
+	.scroll-bar {
+		min-height: 200px;
+		overflow-y: scroll;
+		scroll-behavior: smooth;
+		border-radius: 10px;
 	}
 }

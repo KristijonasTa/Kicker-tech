@@ -5,11 +5,6 @@ const Headers = () => {
 	return (
 		<div>
 			<header>
-				<div className='icon'>
-					<span></span>
-					<span></span>
-					<span></span>
-				</div>
 				<ul className='list'>
 					<li>Lorem, ipsum.</li>
 					<li>Lorem, ipsum.</li>
