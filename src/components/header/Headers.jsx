@@ -1,22 +1,29 @@
 import React from 'react';
 import { useState } from 'react';
+import { FaBars, FaTimes } from 'react-icons/fa';
+
 import './headers.css';
 
 const Headers = () => {
-	const [mobile, setMobile] = useState(false);
+	const [isOpen, setIsOpen] = useState(false);
 
 	return (
 		<div>
 			<header>
-				<ul className='list'>
-					<li>Lorem, ipsum.</li>
-					<li>Lorem, ipsum.</li>
-					<li>Lorem, ipsum.</li>
-				</ul>
-				<div id='mobile'>
-					<button className='navBar' onClick={() => setMobile(!mobile)}>
-						<i className='fas fa-bars'></i>
-					</button>
+				<div className={`nav-items ${isOpen && 'open'}`}>
+					<a href='/#'>Lorem, ipsum.</a>
+					<a href='/#'>Lorem, ipsum.</a>
+					<a href='/#'>Lorem, ipsum.</a>
+					<div className='nav-btn'>
+						<FaBars />
+					</div>
+					<div />
+				</div>
+				<div
+					className={`close-btn ${isOpen && 'open'}`}
+					onClick={() => setIsOpen(!isOpen)}
+				>
+					<FaTimes />
 				</div>
 			</header>
 		</div>
