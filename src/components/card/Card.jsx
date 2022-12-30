@@ -3,7 +3,7 @@ import './card.css';
 
 const Card = () => {
 	return (
-		<div>
+		<>
 			<div className='card'>
 				<div className='top-card'>
 					<div className='picture'></div>
@@ -72,7 +72,7 @@ const Card = () => {
 					</div>
 				</div>
 			</div>
-		</div>
+		</>
 	);
 };
 

@@ -8,25 +8,20 @@ const Headers = () => {
 	const [isOpen, setIsOpen] = useState(false);
 
 	return (
-		<div>
-			<header>
+		<>
+			<header className={`header ${isOpen && 'open'}`}>
 				<div className={`nav-items ${isOpen && 'open'}`}>
 					<a href='/#'>Lorem, ipsum.</a>
 					<a href='/#'>Lorem, ipsum.</a>
 					<a href='/#'>Lorem, ipsum.</a>
-					<div className='nav-btn'>
-						<FaBars />
-					</div>
-					<div />
 				</div>
-				<div
-					className={`close-btn ${isOpen && 'open'}`}
-					onClick={() => setIsOpen(!isOpen)}
-				>
-					<FaTimes />
+
+				<div className='nav-btn' onClick={() => setIsOpen(!isOpen)}>
+					{isOpen && <FaTimes />}
+					{!isOpen && <FaBars />}
 				</div>
 			</header>
-		</div>
+		</>
 	);
 };
 

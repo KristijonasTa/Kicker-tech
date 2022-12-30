@@ -10,27 +10,38 @@ body {
 	color: #ffffff;
 }
 
+.main {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
 .wrapper {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
+	padding: 35px;
+	display: flex;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	overflow: hidden;
 	gap: 32px;
-	margin-left: 48px;
-	margin-right: 48px;
 	margin-bottom: 48px;
 }
 
 @media screen and (max-width: 1201px) {
 	.wrapper {
-		display: flex;
+		padding: 30px;
 		align-items: center;
 		flex-direction: column;
 	}
 }
 
 @media screen and (max-width: 640px) {
-	.wrapper {
-		display: flex;
+	.main {
+		justify-content: center;
 		align-items: center;
-		flex-direction: column;
+	}
+	.wrapper {
+		padding: 15px;
+		align-items: center;
+		justify-content: center;
 	}
 }
